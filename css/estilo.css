@@ -1,0 +1,344 @@
+body{
+  margin: 0;  
+  padding: 0;
+  background: url(http://www.hdfondos.eu/preview/get_photo/513169/1920/1080) no-repeat center top;
+  background-size: cover;
+  font-family:sans-serif;
+  
+}
+
+#formLogin{
+  position:absolute;
+  top: 63%;
+  left: 49%;
+  margin-left: -200px;
+  margin-top: -300px;
+  width: 460px;
+  min-height: 100px;
+  background-color: #424242;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 500px;
+}
+
+.avatar {
+  left: 40%;
+  width: 80px;
+  height:80px ;
+  border-radius: 50%;
+  position: relative;
+  padding: 5px 5px ;
+}
+.titulo{
+  color: aliceblue;
+  font-size: 2.6em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.usuario{
+  left: 17%;
+  padding: 05px 100px;
+  position: relative;
+  font-size: 1.5em;
+  color: aliceblue;
+  text-align: center;
+}
+
+.contraseña{
+  left: 15%;
+  padding: 05px 100px;
+  position: relative;
+  font-size: 1.5em;
+  color: aliceblue;
+  text-align: center;
+}
+
+#log_usuario, #log_password{
+  padding: 1px 10px;
+  position: relative;
+  font-size: 1em;
+
+}
+#pLogin,#pRegistro1{
+  text-align: center;
+  border: ridge brown;
+  background-color: brown;
+  width: 100%;
+  color: aliceblue;
+}
+
+#formRegistro{
+  position:absolute;
+  top: 60%;
+  left: 47%;
+  margin-left: -200px;
+  margin-top: -300px;
+  width: 500px;
+  min-height: 100px;
+  background-color: #424242;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 500px;
+}
+
+#log_usuario,#log_password{
+  left: 10%;
+  width: 300px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+  border: 0px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+#reg_user,#reg_password,#reg_nombre,#reg_apellido,#reg_email,
+#reg_phone,#reg_permiso,#reg_pregunta1,#reg_pregunta2{
+  width: 445px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+  border: 0px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+
+}
+
+#btnIngresar{
+  position: absolute;
+  left: 35%;
+  margin: 20px;
+  margin-bottom: 20px;
+  width: 110px;
+  height: 40;
+  outline:none;
+  border: 0px;
+  background-color: #585858;
+  color:aliceblue;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+#btnRegistrar,#btnGuardarProd,#btnGuardarProdF{
+  position: absolute;
+  left: 36%;
+  margin: 20px;
+  margin-bottom: 20px;
+  width: 360;
+  height: 40;
+  outline:none;
+  border: 0px;
+  background-color: #585858;
+  color:aliceblue;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+#btnCuentaNueva,#btnInicio,#btnStockActual,
+#btnIngresoProd,#btnSalidaProd,#btnConteoFisico,#btnCierreInven,#btnCerrarSesion{
+  position: relative;
+  margin: 1px;
+  top:50px;
+  left: 3%;
+  width: 21%;
+  height: 40%;
+  border: 0px;
+  background-color: #585858;
+  color: aliceblue;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: initial;
+}
+
+#btnRegresarMenu{
+    position: relative;
+    top: 310px;
+    left: 87%;
+    width: 8%;
+    height: 40%;
+    border: 0px;
+    background-color: #585858;
+    color: aliceblue;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tablaProducto{
+  background: #585858;
+  border: solid white;
+  position: relative;
+  left: 15%;
+  top: 35px;
+  width: 70%;
+  height: 100%;
+}
+
+.tr{
+  border: solid black;
+  background: #585858;
+  
+}
+
+#buscadorProducto{
+  position: absolute;
+  border: transparent;
+  left: 36%;
+  width: 20%;
+  font-size: 1.2em;
+}
+
+.tablaInicio{
+  background: #585858;
+  border: solid black;
+  position: relative;
+  left: 25%;
+  top: -240px;
+  width: 70%;
+  height: 100%;
+  padding: 0 0;
+  margin: 0;
+}
+
+.tituloInicio{
+  color: tomato;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafoInicio1{
+  padding: 5px 5px;
+  margin: 8px;
+  color: black;
+  font-size: 2ex;
+  text-align: initial;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.parrafoInicio2{
+  margin: 8px;
+  color: black;
+  font-size: 2ex;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.subtituloInicio{
+  padding: 5px 5px;
+  margin: 8px;
+  color: tomato;
+  font-size: 1.5em;
+  text-align: initial;
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+#fecha{
+  position: absolute; 
+  right: 6%;
+  border: solid black;
+  background: #424242;
+  color: aliceblue;
+}
+
+#formRegistroProd{
+  position:absolute;
+  top: 63%;
+  left: 49%;
+  margin-left: -200px;
+  margin-top: -300px;
+  width: 460px;
+  min-height: 100px;
+  background-color: #424242;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 400px;
+}
+
+#codigoP,#nombreP,#descripcionP,#cantidadP,#proveedorP{
+  width: 405px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+  border: 0px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  right: 0;
+}
+
+#btnAgregar,#btnEliminar{
+  top: -1px;
+  position: relative;
+  margin: 1px;
+  left: 65%;
+  width: 6%;
+  height: 30%;
+  border: 0px;
+  background-color: #585858;
+  color: aliceblue;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+}
+
+#btnBuscar{
+  position: relative;
+  top: -1px; 
+  margin: 1px;
+  left: 56.5%;
+  width: 6%;
+  height: 30%;
+  border: 0px;
+  background-color: #585858;
+  color: aliceblue;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+}
+
+#codigoPF,#nombrePF,#descripcionPF,#cantidadPF,#proveedorPF{
+width: 410px;
+height: 30px;
+margin-left: 20px;
+margin-top: 10px;
+padding-left: 10px;
+font-size: 1em;
+outline: none;
+border: 0px;
+background-color: #dcdcdc;
+border-radius: 5px;
+}
+
+#conteoF{
+  background: #585858;
+  border: solid white;
+  position: relative;
+  left: 15%;
+  top: 35px;
+  width: 70%;
+  height: 100%;
+}
+
+#formConteo{
+  position:absolute;
+  top: 63%;
+  left: 49%;
+  margin-left: -200px;
+  margin-top: -300px;
+  width: 460px;
+  min-height: 100px;
+  background-color: #424242;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 400px;
+}
+

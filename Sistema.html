@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Control de Stock</title>
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    
+    <div id="login">
+        <br>
+    <h1 class="titulo">Sistema de Control de Stock</h1>
+        
+        <form id="formLogin">
+            <br>
+                <img class="avatar" src="imagenes/usuario.logo.png"  alt="logo de usuario">
+                <h1 class="titulo">Iniciar Sesión</h1>
+                <p id="pLogin"></p>
+                <label class="usuario">Usuario: </label>
+                <input type="text" name="log_usuario" id="log_usuario">
+                <br><br>
+                <label class="contraseña">Contraseña: </label>
+                <input type="password" name="log_password" id="log_password">
+                <br>
+                <input type="button" value="Ingresar" id="btnIngresar">
+               
+        </form>
+    
+    </div>
+    <div id="registro">
+            <h1 class="titulo">Sistema de Control de Stock</h1>
+            <form id="formRegistro">   
+            <h1 class="titulo">Registro de Usuario</h1>
+            <p id="pRegistro1"></p>
+            <input type="text" name="reg_user" id="reg_user" placeholder="Ingrese un nombre de Usuario ">
+            <br>
+            <input type="password" name="reg_password" id="reg_password" placeholder="Ingrese su Contraseña" min="8" max="10">
+            <br>
+            <input type="text" name="reg_nombre" id="reg_nombre" placeholder="Ingrese su Nombre">
+            <br>
+            <input type="text" name="reg_apellido" id="reg_apellido" placeholder="Ingrese su Apellido">
+            <br>
+            <input type="number" min="7" max="10" name="reg_phone" id="reg_phone" placeholder="Ingrese su telefono ">
+            <br>
+            <input type="text" name="reg_pregunta1" id="reg_pregunta1" placeholder="¿Cuál es tu color favorito?">
+            <br>
+            <input type="text" name="reg_pregunta2" id="reg_pregunta2" placeholder="¿Cuál es tu pelicula favorita?">
+            <br>
+            
+            <input type="button" value="Registrar" id="btnRegistrar">
+            
+                </form>
+            </div>
+    
+    <div id="inicio">
+        <h1 class="titulo">Sistema de Control de Stock</h1>    
+        <p id="fecha"></p>
+        <input type="button" value="Inicio" id="btnInicio">
+        <br>
+        <input type="button" value="Stock Actual" id="btnStockActual">
+        <br>
+        <input type="button" value="Ingresar producto" id="btnIngresoProd">
+        <br>
+        <input type="button" value="Salida producto" id="btnSalidaProd">
+        <br>
+        <input type="button" value="Conteo Fisico" id="btnConteoFisico">
+        <br>    
+        <input type="button" value="Cierre Inventario" id="btnCierreInven">
+        <br>    
+        <input type="button" value="Registrar Usuarios" id="btnCuentaNueva">
+        <br>
+        <input type="button" value="Cerrar Sesión" id="btnCerrarSesion">
+        
+        <table class="tablaInicio">
+                <tr>
+                    <td>    
+                            <br>
+                            <h1 class="tituloInicio">Tienda de Abarrotes "Doña Maria"</h1>
+                       
+                            <h2 class="subtituloInicio">Visión</h2>
+                            <p class="parrafoInicio1">
+                                "Ser la Mejor Tienda de Abarrotes en Quito"
+                            </p>
+                            
+                            <h2 class="subtituloInicio">Misión</h2>
+                            <p class="parrafoInicio2">
+                                Somos una microempresa dedicada a la venta de abarrotes y deseamos hacer que 
+                                nuestros clientes se sientan cómodos con el servicio que ofrecemos, de forma 
+                                que nuestra atención esté puesta en la satisfacción mutua a largo plazo.
+                            </p> 
+                    </td>
+                </tr> 
+            </table>
+    </div>
+    <div id="stockActual">
+            <h1 class="titulo">Sistema de Control de Stock</h1>
+            <table class="tablaProducto">
+                    <h5>Stock del sistema</h5>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad en Unidades</th>
+                    <th>Proveedor</th>
+                </tr>
+                    <tbody id="tbody">
+                    </tbody>    
+            </table>    
+               
+    </div>
+    <div id="ingresoProducto">
+            <h1 class="titulo">Sistema de Control de Stock</h1>
+            <input type="text" name="buscadorProducto" id="buscadorProducto" placeholder="Ingrese Producto a Buscar">
+            <input type="button" value="Buscar" id="btnBuscar">
+            <input type="button" value="Agregar" id="btnAgregar">
+            <input type="button" value="Eliminar" id="btnEliminar">
+            <table class="tablaProducto">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad en Unidades</th>
+                    <th>Proveedor</th>
+                </tr>
+                    <tbody id="tbody1">
+                    </tbody>    
+                </table>
+    </div>
+    <div id="tablaIngreso">
+        <h1 class="titulo">Sistema de Control de Stock</h1>
+        <form id="formRegistroProd">   
+        <h1 class="titulo">Agregar Producto</h1>
+        <input type="number" id="codigoP" name="codigo" placeholder="Ingresar el codigo del producto">
+        <br>
+        <input type="text" id="nombreP" name="nombre" placeholder="Ingrese el nombre del producto">
+        <br>
+        <input type="text" id="descripcionP" name="descripcion" placeholder="Ingrese la descripcion del producto">
+        <br>
+        <input type="number" id="cantidadP" name="cantidad" placeholder="Ingrese la cantidad del producto">
+        <br>
+        <input type="text" id="proveedorP" name="proveedor" placeholder="Ingrese el proveedor del producto">
+        <br>
+        <input type="button" id="btnGuardarProd" value="Agregar">
+        </form> 
+    </div>
+    <div id="salidaProducto"></div>
+    <div id="conteoFisico">
+
+        <h1 class="titulo">Sistema de Control de Stock</h1>
+        <form id="formConteo">  
+        <h1 class="titulo">Conteo Fisico</h1>
+
+        <input type="number" id="codigoPF" name="codigoPF" placeholder="Ingresar el codigo del producto">
+        <br>
+        <input type="text" id="nombrePF" name="nombrePF" placeholder="Ingrese el nombre del producto">
+        <br>
+        <input type="text" id="descripcionPF" name="descripcionPF" placeholder="Ingrese la descripcion del producto">
+        <br>
+        <input type="number" id="cantidadPF" name="cantidadPF" placeholder="Ingrese la cantidad del producto">
+        <br>
+        <input type="text" id="proveedorPF" name="proveedorPF" placeholder="Ingrese el proveedor del producto">
+        <br>
+        <input type="button" id="btnGuardarProdF" value="Agregar">
+        </form>
+    </div>
+    <div id="cierreInven"></div>
+    <div id="boton">
+        <input type="button" value="Atras" id="btnRegresarMenu">
+    </div>
+    <div id="conteoF">
+    <h5>Stock Fisico</h5>
+    <table id="tablaCF">
+        <thead>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Cantidad</th>
+            <th>Proveedor</th>
+        </thead>
+        <tbody id="tbody2">  
+        </tbody>
+    </table>
+</div>
+</body>
+<script src="js/usuario.js"></script>
+<script src="js/divisiones.js"></script>
+<script src="js/producto.js"></script>
+<script src="js/botones.js"></script>
+<script>
+</script>
+</html>
